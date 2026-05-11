@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 type Stack struct {
-	items []int
+	items []string
 }
 
-func (s *Stack) Push(value int) {
+func (s *Stack) Push(value string) {
 	s.items = append(s.items, value)
 }
 
-func (s *Stack) Pop() (int, bool) {
+func (s *Stack) Pop() (string, bool) {
 	if len(s.items) == 0 {
-		return 0, false
+		return "", false
 	}
 
 	last := len(s.items) - 1
@@ -26,13 +26,15 @@ func (s *Stack) IsEmpty() bool {
 }
 
 func main() {
-	stack := &Stack{}
-	stack.Push(10)
-	stack.Push(20)
-	stack.Push(30)
+	browserHistory := &Stack{}
 
-	for !stack.IsEmpty() {
-		value, _ := stack.Pop()
-		fmt.Println(value)
+	browserHistory.Push("google.com")
+	browserHistory.Push("github.com")
+	browserHistory.Push("stackoverflow.com")
+
+	fmt.Println("User presses back button:")
+	for !browserHistory.IsEmpty() {
+		page, _ := browserHistory.Pop()
+		fmt.Println("Back to:", page)
 	}
 }
