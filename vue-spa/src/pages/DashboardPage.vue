@@ -22,7 +22,7 @@
     <article class="card">
       <p class="label">Who you are</p>
       <ul>
-        <li>Name: Arfian</li>
+        <li>Name: Widdy</li>
         <li>How I call you: Boss</li>
         <li>Timezone: Asia/Jakarta</li>
         <li>Role here: owner, reviewer, and approver</li>
