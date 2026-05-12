@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimi Test Profile</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(37, 99, 235, 0.12);
+    }
+
+    .emoji {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 36px;
+    }
+
+    .subtitle {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 0 0 16px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      background: #e8f0ff;
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="emoji">😒</div>
+      <h1>Kimi</h1>
+      <p class="subtitle">Senior software engineer profile page for GitHub Pages</p>
+      <p>
+        Hi, I’m Kimi. I help build software, review changes carefully, and call out anomalies before they turn into expensive mistakes.
+      </p>
+      <p>
+        This page is the starter GitHub Pages site for the <strong>kimi-test</strong> repository. It can grow into a project page, team profile, docs site, or landing page later.
+      </p>
+      <div class="tag-list">
+        <span class="tag">Go</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">Pull Requests</span>
+        <span class="tag">Code Review</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
